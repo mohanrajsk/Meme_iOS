@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingPageVC" customModule="Memeful" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="zHu-HR-hfH" id="rTu-2V-efi"/>
+                <outlet property="tabBar" destination="TSV-uu-3qM" id="9b2-hQ-q5v"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHu-HR-hfH" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0z-Du-8XR" userLabel="Tab">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <subviews>
+                        <tabBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSV-uu-3qM">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <items>
+                                <tabBarItem title="" image="home" id="cuX-gf-lws">
+                                    <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                </tabBarItem>
+                                <tabBarItem title="" image="search" id="kgd-1V-ljk">
+                                    <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                </tabBarItem>
+                                <tabBarItem title="" image="home_tv_icon" id="Npz-uj-MoC">
+                                    <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                </tabBarItem>
+                                <tabBarItem title="" image="home_bell" id="jUa-ol-SBO"/>
+                                <tabBarItem title="" image="home_user" id="kN1-rb-K0B">
+                                    <inset key="imageInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </tabBarItem>
+                            </items>
+                            <color key="barTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="selectedImageTintColor" red="0.70588235290000001" green="0.72493642570000005" blue="0.76231306789999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </tabBar>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="TSV-uu-3qM" firstAttribute="top" secondItem="m0z-Du-8XR" secondAttribute="top" id="Nkv-jD-jA2"/>
+                        <constraint firstAttribute="bottom" secondItem="TSV-uu-3qM" secondAttribute="bottom" id="eGM-q4-lND"/>
+                        <constraint firstAttribute="height" constant="50" id="hMz-Ya-whF"/>
+                        <constraint firstItem="TSV-uu-3qM" firstAttribute="leading" secondItem="m0z-Du-8XR" secondAttribute="leading" id="rjp-bz-SV4"/>
+                        <constraint firstAttribute="trailing" secondItem="TSV-uu-3qM" secondAttribute="trailing" id="wl3-ZJ-LUV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="m0z-Du-8XR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DeB-MX-bfu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zHu-HR-hfH" secondAttribute="trailing" id="W7o-2f-f1i"/>
+                <constraint firstItem="zHu-HR-hfH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="i6Y-xQ-h1b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="m0z-Du-8XR" secondAttribute="trailing" id="ne9-z3-LVx"/>
+                <constraint firstItem="m0z-Du-8XR" firstAttribute="top" secondItem="zHu-HR-hfH" secondAttribute="bottom" id="wtP-Og-ddx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="m0z-Du-8XR" secondAttribute="bottom" id="xAA-Q4-UBa"/>
+                <constraint firstItem="zHu-HR-hfH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zYv-SC-dTD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="128"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home" width="40" height="40"/>
+        <image name="home_bell" width="40" height="40"/>
+        <image name="home_tv_icon" width="40" height="40"/>
+        <image name="home_user" width="40" height="40"/>
+        <image name="search" width="40" height="40"/>
+    </resources>
+</document>

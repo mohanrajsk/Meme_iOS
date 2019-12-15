@@ -1,0 +1,6 @@
+framework module Pods_Memeful {
+  umbrella header "Pods-Memeful-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostOptionsView" customModule="Memeful" customModuleProvider="target">
+            <connections>
+                <outlet property="downVote" destination="sqG-O3-wS6" id="dad-Rf-HeF"/>
+                <outlet property="fav" destination="G1L-3W-SVe" id="8m7-ET-UKp"/>
+                <outlet property="share" destination="r1L-oH-kqG" id="n8R-oH-Fmf"/>
+                <outlet property="upVote" destination="yFD-s6-r88" id="aRb-bL-Q9d"/>
+                <outlet property="vwContainer" destination="JrW-aP-oIE" id="yZe-sb-Lta"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JrW-aP-oIE" userLabel="container">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFD-s6-r88">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                            <state key="normal" title="10" image="icon_up_vote"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqG-O3-wS6">
+                            <rect key="frame" x="80" y="0.0" width="80" height="50"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="13"/>
+                            <state key="normal" title="10" image="icon_down_vote"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1L-3W-SVe">
+                            <rect key="frame" x="160" y="0.0" width="80" height="50"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                            <inset key="titleEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="20" minY="17" maxX="40" maxY="17"/>
+                            <state key="normal" title="10" image="icon_ favourite"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1L-oH-kqG">
+                            <rect key="frame" x="240" y="0.0" width="80" height="50"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                            <inset key="titleEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="20" minY="18" maxX="45" maxY="18"/>
+                            <state key="normal" title="share" image="icon_share"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="r1L-oH-kqG" secondAttribute="bottom" id="1Bp-ae-V32"/>
+                        <constraint firstAttribute="bottom" secondItem="G1L-3W-SVe" secondAttribute="bottom" id="1S0-GI-IUo"/>
+                        <constraint firstItem="sqG-O3-wS6" firstAttribute="width" secondItem="yFD-s6-r88" secondAttribute="width" id="3Fr-HR-KPE"/>
+                        <constraint firstItem="r1L-oH-kqG" firstAttribute="top" secondItem="JrW-aP-oIE" secondAttribute="top" id="3Jo-Sf-1T9"/>
+                        <constraint firstItem="yFD-s6-r88" firstAttribute="leading" secondItem="JrW-aP-oIE" secondAttribute="leading" id="6HQ-Mm-4Z0"/>
+                        <constraint firstItem="r1L-oH-kqG" firstAttribute="width" secondItem="yFD-s6-r88" secondAttribute="width" id="Cdh-C9-bLq"/>
+                        <constraint firstAttribute="trailing" secondItem="r1L-oH-kqG" secondAttribute="trailing" id="EMR-nP-vCB"/>
+                        <constraint firstItem="G1L-3W-SVe" firstAttribute="width" secondItem="yFD-s6-r88" secondAttribute="width" id="LRz-SD-rgw"/>
+                        <constraint firstItem="G1L-3W-SVe" firstAttribute="leading" secondItem="sqG-O3-wS6" secondAttribute="trailing" id="MNN-Lv-XjO"/>
+                        <constraint firstAttribute="bottom" secondItem="sqG-O3-wS6" secondAttribute="bottom" id="RJy-AZ-Hnd"/>
+                        <constraint firstItem="r1L-oH-kqG" firstAttribute="leading" secondItem="G1L-3W-SVe" secondAttribute="trailing" id="beQ-1X-TeE"/>
+                        <constraint firstItem="sqG-O3-wS6" firstAttribute="top" secondItem="JrW-aP-oIE" secondAttribute="top" id="cFa-zE-kzH"/>
+                        <constraint firstAttribute="bottom" secondItem="yFD-s6-r88" secondAttribute="bottom" id="cjS-pa-qfV"/>
+                        <constraint firstItem="sqG-O3-wS6" firstAttribute="leading" secondItem="yFD-s6-r88" secondAttribute="trailing" id="lxG-bq-cm7"/>
+                        <constraint firstItem="G1L-3W-SVe" firstAttribute="top" secondItem="JrW-aP-oIE" secondAttribute="top" id="tc8-q6-UIA"/>
+                        <constraint firstItem="yFD-s6-r88" firstAttribute="top" secondItem="JrW-aP-oIE" secondAttribute="top" id="wFj-Q0-Rb7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.25054621700000002" green="0.2623492181" blue="0.28727856280000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JrW-aP-oIE" secondAttribute="bottom" id="4v9-TG-FdR"/>
+                <constraint firstItem="JrW-aP-oIE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HQG-U6-5k4"/>
+                <constraint firstAttribute="trailing" secondItem="JrW-aP-oIE" secondAttribute="trailing" id="LXE-66-lAb"/>
+                <constraint firstItem="JrW-aP-oIE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZpU-hO-YtG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.75" y="105.63380281690141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_ favourite" width="30" height="30"/>
+        <image name="icon_down_vote" width="25" height="25"/>
+        <image name="icon_share" width="25" height="25"/>
+        <image name="icon_up_vote" width="25" height="25"/>
+    </resources>
+</document>

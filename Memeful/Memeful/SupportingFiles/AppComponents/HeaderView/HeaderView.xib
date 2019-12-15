@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CORBEL.TTF">
+            <string>Corbel</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="Memeful" customModuleProvider="target">
+            <connections>
+                <outlet property="btnLeft" destination="Q8b-x0-5OW" id="eJn-av-oCk"/>
+                <outlet property="btnRight" destination="pDY-jR-C5M" id="ELT-hA-9ik"/>
+                <outlet property="lblTitle" destination="UoY-vs-JsF" id="j0Z-tb-a55"/>
+                <outlet property="navigationView" destination="o8q-0e-HGr" id="ngm-of-OGI"/>
+                <outlet property="statusBarView" destination="08c-V5-rD7" id="Beg-qM-y0R"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08c-V5-rD7">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                    <color key="backgroundColor" red="0.092633105810000005" green="0.58349853750000003" blue="0.44866210220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="B0a-8E-HH0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8q-0e-HGr">
+                    <rect key="frame" x="0.0" y="20" width="320" height="71"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8b-x0-5OW" userLabel="Btn Left">
+                            <rect key="frame" x="5" y="13.5" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="6OF-AE-J4g"/>
+                                <constraint firstAttribute="height" constant="44" id="ygb-mk-3I9"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="icon_refresh"/>
+                            <connections>
+                                <action selector="leftButtonClicked:" destination="-1" eventType="touchUpInside" id="wF3-hE-fyQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDY-jR-C5M" userLabel="Btn Right">
+                            <rect key="frame" x="271" y="13.5" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="Z8w-e7-f04"/>
+                                <constraint firstAttribute="height" constant="44" id="sOy-Ep-5WF"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="icon_plus"/>
+                            <connections>
+                                <action selector="rightButtonClicked:" destination="-1" eventType="touchUpInside" id="GH4-Vd-AvB"/>
+                            </connections>
+                        </button>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Title Set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoY-vs-JsF">
+                            <rect key="frame" x="49" y="25.5" width="217" height="20"/>
+                            <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="17"/>
+                            <color key="textColor" name="EzidoxWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.092633105810000005" green="0.58349853750000003" blue="0.44866210220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="pDY-jR-C5M" firstAttribute="centerY" secondItem="o8q-0e-HGr" secondAttribute="centerY" id="FiK-W7-KvO"/>
+                        <constraint firstItem="Q8b-x0-5OW" firstAttribute="centerY" secondItem="o8q-0e-HGr" secondAttribute="centerY" id="J5H-sR-sLu"/>
+                        <constraint firstItem="Q8b-x0-5OW" firstAttribute="leading" secondItem="o8q-0e-HGr" secondAttribute="leading" constant="5" id="JSV-ss-vT9"/>
+                        <constraint firstAttribute="trailing" secondItem="pDY-jR-C5M" secondAttribute="trailing" constant="5" id="Lxo-WY-5Im"/>
+                        <constraint firstItem="pDY-jR-C5M" firstAttribute="leading" secondItem="UoY-vs-JsF" secondAttribute="trailing" constant="5" id="N8t-6h-Nr8"/>
+                        <constraint firstItem="UoY-vs-JsF" firstAttribute="leading" secondItem="Q8b-x0-5OW" secondAttribute="trailing" id="rB6-rR-qwx"/>
+                        <constraint firstItem="UoY-vs-JsF" firstAttribute="centerY" secondItem="o8q-0e-HGr" secondAttribute="centerY" id="rff-Hu-POG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="o8q-0e-HGr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TK8-T5-Rgl"/>
+                <constraint firstItem="o8q-0e-HGr" firstAttribute="top" secondItem="08c-V5-rD7" secondAttribute="bottom" id="boD-KO-A3H"/>
+                <constraint firstItem="08c-V5-rD7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cLw-DD-Gyh"/>
+                <constraint firstItem="08c-V5-rD7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="htP-dg-Ko2"/>
+                <constraint firstAttribute="trailing" secondItem="o8q-0e-HGr" secondAttribute="trailing" id="jJE-L0-bnw"/>
+                <constraint firstAttribute="trailing" secondItem="08c-V5-rD7" secondAttribute="trailing" id="pYe-X4-BzC"/>
+                <constraint firstAttribute="bottom" secondItem="o8q-0e-HGr" secondAttribute="bottom" id="yWQ-h6-N1a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="37.5" y="-278.34507042253523"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_plus" width="50" height="50"/>
+        <image name="icon_refresh" width="50" height="50"/>
+        <namedColor name="EzidoxWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
